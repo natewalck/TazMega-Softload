@@ -1,0 +1,7 @@
+#!/bin/bash
+
+. ubiquitous_bash.sh
+
+touch "$(getScriptAbsoluteFolder)/Taz_Mega_Config/.pronsolerc"
+
+python2 "$(getScriptAbsoluteFolder)"/Printrun/pronterface.py -c "$(getScriptAbsoluteFolder)/Taz_Mega_Config/.pronsolerc"

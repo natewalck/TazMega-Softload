@@ -1,3 +1,6 @@
 [submodule "Printrun"]
 	path = Printrun
 	url = https://github.com/kliment/Printrun.git
+[submodule "gCodeViewer"]
+	path = gCodeViewer
+	url = git@github.com:hudbrog/gCodeViewer.git

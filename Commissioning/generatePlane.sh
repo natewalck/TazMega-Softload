@@ -1,22 +1,24 @@
 #!/bin/bash
 
-xmin=30
-xmax=638
+xmin=0
+xmax=425
 
 ymin=0
-ymax=375
+ymax=315
 
-zsafe=70
+zsafe=50
 #zwork=$zsafe
-zwork=64.5
+zwork=15
 
-#Slightly less than twice cutter diameter.
+#Slightly less than half cutter diameter.
 yincrement=5
 
 #mm/min
 workfeed=600
 
-echo "G28"
+echo "M106 P1 S255"				#Fan on.
+echo "G28"					
+echo "T5"					#Switch to CNC mill tool.
 echo "G0 X$xmin Y$ymin Z$zsafe F6000"
 echo "G0 Z$zwork F100"
 

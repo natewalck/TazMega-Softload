@@ -17,11 +17,11 @@ def build_list(data_file, sample_size):
                 n += 1
             else:
                 n = 1
-                sample_dataset.append(samples[::-1])
+                sample_dataset.append(samples)
                 samples = []
         # Catch the last set of samples and append them to the dataset
-        sample_dataset.append(samples[::-1])
-        return sample_dataset[::-1]
+        sample_dataset.append(samples)
+        return sample_dataset
 
 # Requires plotly to be setup and API key set as per:
 # https://plot.ly/python/getting-started/
